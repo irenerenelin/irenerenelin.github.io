@@ -27,7 +27,7 @@
 	nav {
 	  float: left;
 	  width: 25%;
-	  height: 450px; /* only for demonstration, should be removed */
+	  height: 500px; /* only for demonstration, should be removed */
 	  background: rgb(255, 238, 176);
 	  padding: 20px;
 	}
@@ -43,7 +43,7 @@
 	  padding: 20px;
 	  width: 75%;
 	  background-color: rgb(255, 255, 255);
-	  height: 450px; /* only for demonstration, should be removed */
+	  height: 500px; /* only for demonstration, should be removed */
 	}
 
 	/* Clear floats after the columns */
@@ -62,12 +62,36 @@
 	}
 
 	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-	@media (max-width: 800px) {
+	@media (max-width: 900px) {
 	  nav, article {
 	    width: 100%;
 	    height: auto;
 	  }
 	}
+
+	div.gallery {
+	  margin: 10px;
+	  border: 1px solid rgb(255, 144, 88);
+	  float: left;
+	  opacity: 0.85;
+	  width: 180px;
+	}
+
+	div.gallery:hover {
+	  border: 1px solid rgb(255, 144, 88);
+	  opacity: 1;
+	}
+
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	}
+
+	div.desc {
+	  padding: 10px;
+	  text-align: center;
+	}
+
 	</style>
 
 	<header>
@@ -84,9 +108,49 @@
 	  </nav>
 	  
 	  <article>
+
 	    <h1>生活照</h1>
-	    <img src="orange.jpg" width="450" height="300">
-	    <p>今天天氣真好，願生命中都充滿如此美好的日子！</p>
+	   		<div class="gallery">
+    			<img src="IMG_6385.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">LONDON</div>
+			</div>
+
+
+			<div class="gallery">
+    			<img src="IMG_8322.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">TAINAN</div>
+			</div>
+
+			<div class="gallery">
+    			<img src="snow.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">SAPPORO</div>
+			</div>
+
+			<div class="gallery">
+    			<img src="horse.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">VIGAN</div>
+			</div>
+
+			<div class="gallery">
+    			<img src="IMG_1142.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">BAGUIO</div>
+			</div>
+
+			<div class="gallery">
+    			<img src="IMG_2882.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">PENGHU</div>
+			</div>
+
+			<div class="gallery">
+    			<img src="IMG_7322.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">BTS</div>
+			</div>
+
+			<div class="gallery">
+    			<img src="Disney.jpg" alt="Cinque Terre" width="600" height="400">
+  			<div class="desc">DISNEY</div>
+			</div>
+
 	  </article>  
 
 	</section>
